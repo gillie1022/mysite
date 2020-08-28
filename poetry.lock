@@ -137,9 +137,9 @@ version = "5.2.0"
 brotli = ["brotli"]
 
 [metadata]
-content-hash = "2d84ff900f16e3224dc8a8b4abe93a34eac16c1f8f4322650a5a6b1a67cc2e12"
+content-hash = "85872f69ae7cbdbf0bf57c7b9556798c144e53116d12a40b97cd88d0f356a595"
 lock-version = "1.1"
-python-versions = "^3.7"
+python-versions = "3.8.5"
 
 [metadata.files]
 dj-database-url = [
