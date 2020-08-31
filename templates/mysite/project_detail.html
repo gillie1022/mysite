@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1>{{ project.title }}</h1>
+<div class="row">
+    <div class="col-md-8">
+        <img src="https://placebear.com/200/300" alt="" width="100%">
+    </div>
+    <div class="col-md-4">
+        <h5>About the project:</h5>
+        <p>{{ project.description }}</p>
+        <br>
+        <h5>Technologies used:</h5>
+        {% for technology in project.technologies.all %}
+        <p>{{ technology }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

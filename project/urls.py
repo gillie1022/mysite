@@ -20,7 +20,9 @@ from mysite import views as mysite_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', mysite_views.homepage, name='homepage')
+    path('', mysite_views.homepage, name='homepage'),
+    path('projects/', mysite_views.list_projects, name='project_list'),
+    path('projects/<int:project_pk>/', mysite_views.project_detail, name='project_detail')
 ]
 
 if settings.DEBUG:
