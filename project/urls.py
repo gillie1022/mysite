@@ -23,7 +23,9 @@ urlpatterns = [
     path('', mysite_views.homepage, name='homepage'),
     path('projects/', mysite_views.list_projects, name='project_list'),
     path('projects/<int:project_pk>/', mysite_views.project_detail, name='project_detail'),
-    path('projects/<technology>/', mysite_views.projects_by_technology, name='projects_by_technology')
+    path('projects/<technology>/', mysite_views.projects_by_technology, name='projects_by_technology'),
+    path('projects/calculator', mysite_views.calculator, name='calculator'),
+
 ]
 
 if settings.DEBUG:

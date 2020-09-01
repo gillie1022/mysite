@@ -15,3 +15,6 @@ def project_detail(request, project_pk):
 def projects_by_technology(request, technology):
     projects = Project.objects.filter(technologies__name__contains=technology)
     return render(request, 'mysite/projects_by_technology.html', {'projects': projects, 'technology': technology})
+
+def calculator(request):
+    return render(request, 'mysite/projects/calculator.html')
