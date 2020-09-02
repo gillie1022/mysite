@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'projects/dog_adoption/styles.css' %}">
+{% endblock %}
+{% block content %}
+  <body>
+    <header>
+      <h1>Happy Valley Shelter</h1>
+    </header>
+    <div class="copy">
+      <h2>Adopt a Dog</h2>
+      <p>
+        If you are interested in adopting one of our animals, please fill out
+        our <a href="#">online adoption form</a>.
+      </p>
+    </div>
+    <div class="deck">
+      <div class="card" id="Beans">
+        <div>
+          <img
+            src="{% static 'projects/dog_adoption/dog_images/beans.jpg' %}"
+            alt="Beans"
+            class="dogpic"
+          />
+        </div>
+        <div class="nametag">
+          <h3>Beans</h3>
+          <div class="traits">
+            <span>Adult</span>
+            <span>Male</span>
+            <span>Medium</span>
+            <span>Easygoing</span>
+            <span>Good with cats</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="Zelda">
+        <div>
+          <img
+            src="{% static 'projects/dog_adoption/dog_images/boston-terrier.jpg' %}"
+            alt="Zelda"
+            class="dogpic"
+          />
+        </div>
+        <div class="nametag">
+          <h3>Zelda</h3>
+          <div class="traits">
+            <span>Senior</span>
+            <span>Female</span>
+            <span>Small</span>
+            <span>Good with kids</span>
+            <span>Good with other dogs</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="Baby">
+        <div>
+          <img src="{% static 'projects/dog_adoption/dog_images/boxer.jpg' %}" alt="Baby" class="dogpic" />
+        </div>
+        <div class="nametag">
+          <h3>Baby</h3>
+          <div class="traits">
+            <span>Young</span>
+            <span>Female</span>
+            <span>Large</span>
+            <span>Energetic</span>
+            <span>Good with kids</span>
+            <span>Good with other dogs</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="Tom-Tom">
+        <div>
+          <img
+            src="{% static 'projects/dog_adoption/dog_images/golden-lab.jpg' %}"
+            alt="Tom-Tom"
+            class="dogpic"
+          />
+        </div>
+        <div class="nametag">
+          <h3>Tom-Tom</h3>
+          <div class="traits">
+            <span>Young</span>
+            <span>Male</span>
+            <span>Large</span>
+            <span>Energetic</span>
+            <span>Good with kids</span>
+            <span>Good with other dogs</span>
+            <span>Good with cats</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="Marco">
+        <div>
+          <img
+            src="{% static 'projects/dog_adoption/dog_images/little-dog.jpg' %}"
+            alt="Marco"
+            class="dogpic"
+          />
+        </div>
+        <div class="nametag">
+          <h3>Marco</h3>
+          <div class="traits">
+            <span>Adult</span>
+            <span>Male</span>
+            <span>Small</span>
+            <span>Energetic</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="Shackleton">
+        <div>
+          <img
+            src="{% static 'projects/dog_adoption/dog_images/old-shaggy.jpg' %}"
+            alt="Shackleton"
+            class="dogpic"
+          />
+        </div>
+        <div class="nametag">
+          <h3>Shackleton</h3>
+          <div class="traits">
+            <span>Adult</span>
+            <span>Male</span>
+            <span>Medium</span>
+            <span>Easygoing</span>
+            <span>Energetic</span>
+            <span>Good with kids</span>
+            <span>Good with other dogs</span>
+            <span>Good with cats</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="Midge">
+        <div>
+          <img
+            src="{% static 'projects/dog_adoption/dog_images/shih-tzu.jpg' %}"
+            alt="Midge"
+            class="dogpic"
+          />
+        </div>
+        <div class="nametag">
+          <h3>Midge</h3>
+          <div class="traits">
+            <span>Adult</span>
+            <span>Female</span>
+            <span>Small</span>
+            <span>Easygoing</span>
+            <span>Good with kids</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="Ladybird">
+        <div>
+          <img
+            src="{% static 'projects/dog_adoption/dog_images/young-bulldog.jpg' %}"
+            alt="Ladybird"
+            class="dogpic"
+          />
+        </div>
+        <div class="nametag">
+          <h3>Ladybird</h3>
+          <div class="traits">
+            <span>Young</span>
+            <span>Female</span>
+            <span>Large</span>
+            <span>Easgoing</span>
+            <span>Energetic</span>
+            <span>Good with kids</span>
+            <span>Good with other dogs</span>
+            <span>Good with cats</span>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="Mina">
+        <div>
+          <img
+            src="{% static 'projects/dog_adoption/dog_images/young-peppy.jpg' %}"
+            alt="Mina"
+            class="dogpic"
+          />
+        </div>
+        <div class="nametag">
+          <h3>Mina</h3>
+          <div class="traits">
+            <span>Puppy</span>
+            <span>Female</span>
+            <span>Medium</span>
+            <span>Energetic</span>
+            <span>Good with kids</span>
+            <span>Good with other dogs</span>
+            <span>Good with cats</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footerSection" id="donate"><a href="#">Donate</a></div>
+      <div class="footerSection" id="volunteer"><a href="#">Volunteer</a></div>
+      <div class="footerSection" id="location"><a href="#">Location</a></div>
+    </footer>
+  </body>
+{% endblock %}
+

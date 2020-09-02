@@ -25,6 +25,7 @@ urlpatterns = [
     path('projects/<int:project_pk>/', mysite_views.project_detail, name='project_detail'),
     path('projects/<technology>/', mysite_views.projects_by_technology, name='projects_by_technology'),
     path('projects/calculator', mysite_views.calculator, name='calculator'),
+    path('projects/dog_adoption', mysite_views.dog_adoption, name='dog_adoption'),
 
 ]
 

@@ -18,3 +18,6 @@ def projects_by_technology(request, technology):
 
 def calculator(request):
     return render(request, 'mysite/projects/calculator.html')
+
+def dog_adoption(request):
+    return render(request, 'mysite/projects/dog_adoption.html')
