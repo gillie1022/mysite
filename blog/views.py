@@ -19,4 +19,4 @@ def post_by_category(request, category):
     posts = Post.objects.filter(categories__name__contains=category).order_by(
         "-created_on"
     )
-    return render(request, "mysite/blog_category.html", {"category": category, "posts": posts})
+    return render(request, "mysite/posts_by_category.html", {"category": category, "posts": posts})

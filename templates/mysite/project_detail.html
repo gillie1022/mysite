@@ -16,9 +16,9 @@
         <a href="{% url 'projects_by_technology' technology=technology.name %}"><p>{{ technology.name }}</p></a>
         {% endfor %}
         <h5>Links:</h5>
-        <a href="{{project.github}}" target="_blank">GitHub</a>
+        <a href="{{project.github}}" target="_blank"><p>GitHub</a></p>
         {% if project.livesite is not None %}
-        <a href="{% url project.livesite %}" target="_blank">live site</a>
+        <a href="{% url project.livesite %}" target="_blank"><p>Live Site</p></a>
         {% endif %}
     </div>
 </div>

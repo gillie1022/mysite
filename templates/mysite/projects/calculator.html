@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
-
+{% load static %}
+{% block scripts %}
+<script src="{% static 'projects/calculator/main.js' %}" defer></script>
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'projects/calculator/styles.css' %}">
+{% endblock %}
 {% block content %}
 <div class="calculator">
     <div class="button" id="clear">C</div>
