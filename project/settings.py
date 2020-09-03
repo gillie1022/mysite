@@ -45,9 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Third-party
-    # 'debug_toolbar',
+    'debug_toolbar',
     'django_extensions',
-    'storages',
 
     # Project-specific
     'users',
@@ -136,29 +135,13 @@ AUTH_USER_MODEL = 'users.User'
 
 # Debug toolbar config
 
-# INTERNAL_IPS = [
-#     # ...
-#     '127.0.0.1',
-#     # ...
-# ]
+INTERNAL_IPS = [
+    # ...
+    '127.0.0.1',
+    # ...
+]
 
 # Configure Django App for Heroku.
 import django_heroku
 django_heroku.settings(locals())
 del DATABASES['default']['OPTIONS']['sslmode']
-
-#aws
-
-AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = 'davegillie'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-AWS_S3_OBJECT_PARAMETERS = {
-    'CacheControl': 'max-age=86400',
-}
-AWS_LOCATION = 'static'
-AWS_QUERYSTRING_AUTH = False
-STATIC_URL = "https://s3.amazonaws.com/%s/static/" % AWS_STORAGE_BUCKET_NAME
-AWS_DEFAULT_ACL = None 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
