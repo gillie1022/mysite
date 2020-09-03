@@ -9,10 +9,6 @@ class Technology(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
-<<<<<<< HEAD
-    image = models.ImageField(upload_to='static', null=True, blank=True)
-=======
->>>>>>> parent of 68829c8... maybe images work this time
     github = models.CharField(max_length=250)
     livesite = models.CharField(max_length=250, null=True, blank=True)
     technologies = models.ManyToManyField('Technology', related_name='projects')
