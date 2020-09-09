@@ -1,5 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Hello!</h1>
+<section class="homeSection">
+    <div class="profilePic">
+      <img
+        src="https://davegillie.s3.us-east-2.amazonaws.com/images/profile_pic.jpg"
+        alt="profile pic"
+        id="profilePic"
+      />
+    </div>
+    <article class="homepageArticle">
+      <p class="hello">Hello! I am...</p>
+      <h2 class="pageTitle" id="homepageTitle">Dave Gillie</h2>
+      <h3>Software Developer</h3>
+      <p class="homeSummary">
+        I am pivoting from a career as an Army Transportation Officer, Afghan Campaign Veteran, Logistician and Project Manager. Skilled in data science and eager to add value by drawing on my aviation background and aeronautics degree. I have completed the full-stack immersive software development course at Momentum Learning.
+      </p>
+    </article>
+  </section>
 {% endblock %}

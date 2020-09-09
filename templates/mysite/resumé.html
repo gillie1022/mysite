@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'resumé_styles.css' %}">
+{% endblock %}
+{% block content %}
+<div class="resume">
+    <h2 class="pageTitle" id="resumeTitle">Resumé</h2>
+    <div class="bodyTop">
+        <h3 class="name">Dave Gillie</h3>
+
+        <a id="email">Email: dave.gillie@icloud.com</a>
+        <a id="phone">Phone: 919-579-8534</a>
+
+        <p class="resumeSummary">
+            Software Developer with Secret Security Clearance pivoting from a career as an Army Transportation
+            Officer, Afghan Campaign Veteran, Logistician and Project Manager. Skilled in data science and eager to
+            add value by drawing on my aviation background and aeronautics degree. I have completed the full-stack
+            immersive software development course at Momentum Learning, and worked on a remote team to build an app
+            that helps customers locate pop-up farm stands.
+
+        </p>
+    </div>
+    <h4 class="sectionTitle">Employment History</h4>
+    <div class="job">
+        <h5 class="company">Momentum Learning</h5>
+        <div class="dateBox">
+            <p>April 2020 - Present</p>
+        </div>
+        <h6 class="jobTitle">Software Developer</h6>
+        <!-- <p class="jobDescription"> -->
+        <ul class="jobDescription">
+            <li>Dedicated 16 week immersive full stack coding bootcamp with emphasis in Python, JavaScript, and
+                deploying web applications in Django.</li>
+            <li>Completed daily and weekly technical projects solo, in pair programming and in group setting to
+                learn current development tools, techniques and best practices. </li>
+        </ul>
+        <!-- </p> -->
+        <div class="job">
+            <h5 class="company">Fluor</h5>
+            <div class="dateBox">
+                <p>December 2015 - January 2020</p>
+            </div>
+            <h6 class="jobTitle">Movement Control Coordinator</h6>
+            <p class="jobDescription">
+            <ul>
+                <li>Served as the interface between the National Afghan Trucking (NAT) carriers and the U.S
+                    Military. </li>
+                <li>Responsible for tracking and reporting all ground cargo movement throughout Afghanistan.
+                </li>
+                <li>Utilized in-transit visibility systems to track and coordinate NAT truck movement throughout the Afghanistan theater of operations.
+                </li>
+                <li>Service Validator for the Intra-Theater Airlift Request System (ITARS).
+                </li>
+            </ul>
+            </p>
+        </div>
+        <div class="job">
+            <h5 class="company">Napa Auto Parts</h5>
+            <div class="dateBox">
+                <p>July 2011 - November 2015</p>
+            </div>
+            <h6 class="jobTitle">Project Manager</h6>
+            <p class="jobDescription">
+            <ul>
+                <li>Responsible for implementation of new Integrated Business Solutions (Government Contract Sites)
+                    locations.
+                </li>
+                <li>Exceeded ambitious targets by hitting 103% of profit quota and was awarded Triple Crown for
+                    achieving sales, profit and turnover quotas.</li>
+                <li>Completed the Executive Management Trainee program in April 2014 and was promoted to Project
+                    Manager where I focused on special projects in NAPA’s Integrated Business Solutions department.
+                </li>
+            </ul>
+            </p>
+        </div>
+        <div class="job">
+            <h5 class="company">United States Army Reserve</h5>
+            <div class="dateBox">
+                <p class="dates">July 2010 - August 2018</p>
+            </div>
+            <h6 class="jobTitle">Transportation Officer</h6>
+            <p class="jobDescription">
+            <ul>
+                <li>
+                    Served as the Watercraft Terminal Operations Officer with the 332nd Transportation Battalion
+                    based in Tampa, FL until November 2015.
+                </li>
+                <li>Served as Commander of the 678th Movement Control Team and Aerial Port Commander of Jalalabad Airfield while deployed to Jalalabad, Afghanistan in support of Operation Enduring Freedom. </li>
+            </ul>
+            </p>
+        </div>
+        <h4 class="sectionTitle">Education</h4>
+        <div class="job">
+            <h5 class="company">Momentum Learning - Durham, NC</h5>
+            <div class="dateBox">
+                <p>2020</p>
+            </div>
+            <h6 class="jobTitle">Full Stack Software Engineering Course</h6>
+        </div>
+        <div class="job">
+            <h5 class="company">Army Logisitic University - Fort Lee, VA</h5>
+            <div class="dateBox">
+                <p>2010-2011</p>
+            </div>
+            <h6 class="jobTitle">U.S. Army Basic Officer Leader's Course - Transportation</h6>
+        </div>
+        <div class="job">
+            <h5 class="company">Embry-Riddle Aeronautical University - Daytona Beach, FL</h5>
+            <div class="dateBox">
+                <p>2006-2010</p>
+            </div>
+            <h6 class="jobTitle">B.S. Aerounatics</h6>
+        </div>
+    </div>
+    {% endblock %}

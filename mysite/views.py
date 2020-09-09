@@ -4,6 +4,9 @@ from .models import Project, Technology
 def homepage(request):
     return render(request, 'mysite/index.html')
 
+def resumé(request):
+    return render(request, 'mysite/resumé.html')
+
 def list_projects(request):
     projects = Project.objects.all()
     return render(request, 'mysite/list_projects.html', {'projects': projects})

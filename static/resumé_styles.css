@@ -1,0 +1,106 @@
+.resume {
+    display: flex;
+    flex-flow: wrap;
+  }
+  
+  #resumeTitle {
+    width: 100%;
+  }
+  .bodyTop {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+  }
+  
+  .name {
+    grid-column: 1/1;
+    grid-row: 1 / span 2;
+    margin: 0px;
+  }
+  
+  #email {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: end;
+  }
+  
+  #phone {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    justify-self: end;
+  }
+  
+  .resumeSummary {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+  }
+  
+  .sectionTitle {
+    width: 100%;
+  }
+  .job {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .company {
+    margin: 0px;
+    width: 50%;
+    font-size: 1.5vw;
+  }
+  
+  .dateBox {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .dateBox p {
+    margin: 0px;
+  }
+  
+  .jobTitle {
+    font-size: 1.5vw;
+    margin: 0px;
+    font-weight: 100;
+  }
+  
+  .jobDescription {
+    font-size: 1.2vw;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .bodyTop {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .name {
+      width: 100%;
+    }
+  
+    #email {
+      width: 100%;
+    }
+  
+    .company {
+      width: 100%;
+      font-size: 1.5em;
+    }
+    .jobTitle {
+      font-size: 1.5em;
+    }
+    .dateBox {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .sectionTitle {
+      font-size: 1.75em;
+    }
+    .jobDescription {
+      font-size: 1.25em;
+      line-height: 1.25em;
+    }
+  }
