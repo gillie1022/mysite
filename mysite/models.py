@@ -9,6 +9,7 @@ class Technology(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
+    image = models.CharField(max_length=250, null=True, blank=True)
     github = models.CharField(max_length=250)
     livesite = models.CharField(max_length=250, null=True, blank=True)
     technologies = models.ManyToManyField('Technology', related_name='projects')
