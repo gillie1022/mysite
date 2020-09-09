@@ -21,3 +21,6 @@ def calculator(request):
 
 def dog_adoption(request):
     return render(request, 'mysite/projects/dog_adoption.html')
+
+def the_squarrre(request):
+    return render(request, 'mysite/projects/the_squarrre.html')
