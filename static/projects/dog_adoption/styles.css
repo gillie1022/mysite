@@ -1,4 +1,4 @@
-header {
+.siteheader {
   background-color: #243b75;
   color: #ffffff;
   font-family: "Open Sans";
@@ -22,7 +22,7 @@ header {
   font-family: "Oswald";
 }
 
-.card {
+.dogcard {
   padding-top: 10px;
   padding-bottom: 20px;
   width: 33%;

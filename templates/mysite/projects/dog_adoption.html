@@ -2,10 +2,14 @@
 {% load static %}
 {% block styles %}
 <link rel="stylesheet" href="{% static 'projects/dog_adoption/styles.css' %}">
+<link
+href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700"
+rel="stylesheet"
+/>
 {% endblock %}
 {% block content %}
   <body>
-    <header>
+    <header class="siteheader">
       <h1>Happy Valley Shelter</h1>
     </header>
     <div class="copy">
@@ -16,7 +20,7 @@
       </p>
     </div>
     <div class="deck">
-      <div class="card" id="Beans">
+      <div class="dogcard" id="Beans">
         <div>
           <img
             src="{% static 'projects/dog_adoption/dog_images/beans.jpg' %}"
@@ -35,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="card" id="Zelda">
+      <div class="dogcard" id="Zelda">
         <div>
           <img
             src="{% static 'projects/dog_adoption/dog_images/boston-terrier.jpg' %}"
@@ -54,7 +58,7 @@
           </div>
         </div>
       </div>
-      <div class="card" id="Baby">
+      <div class="dogcard" id="Baby">
         <div>
           <img src="{% static 'projects/dog_adoption/dog_images/boxer.jpg' %}" alt="Baby" class="dogpic" />
         </div>
@@ -70,7 +74,7 @@
           </div>
         </div>
       </div>
-      <div class="card" id="Tom-Tom">
+      <div class="dogcard" id="Tom-Tom">
         <div>
           <img
             src="{% static 'projects/dog_adoption/dog_images/golden-lab.jpg' %}"
@@ -91,7 +95,7 @@
           </div>
         </div>
       </div>
-      <div class="card" id="Marco">
+      <div class="dogcard" id="Marco">
         <div>
           <img
             src="{% static 'projects/dog_adoption/dog_images/little-dog.jpg' %}"
@@ -109,7 +113,7 @@
           </div>
         </div>
       </div>
-      <div class="card" id="Shackleton">
+      <div class="dogcard" id="Shackleton">
         <div>
           <img
             src="{% static 'projects/dog_adoption/dog_images/old-shaggy.jpg' %}"
@@ -131,7 +135,7 @@
           </div>
         </div>
       </div>
-      <div class="card" id="Midge">
+      <div class="dogcard" id="Midge">
         <div>
           <img
             src="{% static 'projects/dog_adoption/dog_images/shih-tzu.jpg' %}"
@@ -150,7 +154,7 @@
           </div>
         </div>
       </div>
-      <div class="card" id="Ladybird">
+      <div class="dogcard" id="Ladybird">
         <div>
           <img
             src="{% static 'projects/dog_adoption/dog_images/young-bulldog.jpg' %}"
@@ -172,7 +176,7 @@
           </div>
         </div>
       </div>
-      <div class="card" id="Mina">
+      <div class="dogcard" id="Mina">
         <div>
           <img
             src="{% static 'projects/dog_adoption/dog_images/young-peppy.jpg' %}"
