@@ -1,18 +1,14 @@
-body {
-    background-color: #062dda;
+.gameDiv {
   font-family: "Comic Sans MS", cursive;
   color: white;
-  display: flex;
-  justify-content: center;
-}
+  background-color: #062dda;
 
-.gameDiv {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-header{display: flex;
+.gameDiv header{display: flex;
     width: 100%;
     justify-content: center;
 }
