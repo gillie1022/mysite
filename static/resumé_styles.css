@@ -43,6 +43,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 2em;
   }
   
   .company {
@@ -63,7 +64,8 @@
   .jobTitle {
     font-size: 1.5vw;
     margin: 0px;
-    font-weight: 100;
+    font-weight: 400;
+    color: rgb(187, 130, 6);
   }
   
   .jobDescription {
