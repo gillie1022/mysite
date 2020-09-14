@@ -12,6 +12,7 @@ class Project(models.Model):
     image = models.CharField(max_length=250, null=True, blank=True)
     github = models.CharField(max_length=250)
     livesite = models.CharField(max_length=250, null=True, blank=True)
+    outside_livesite = models.CharField(max_length=250, null=True, blank=True)
     technologies = models.ManyToManyField('Technology', related_name='projects')
 
     def __str__(self):

@@ -20,6 +20,10 @@
         {% if project.livesite is not None %}
         <a href="{% url project.livesite %}"><p>Live Site</p></a>
         {% endif %}
+        {% if project.outside_livesite is not None %}
+        <a href="{{project.outside_livesite}}"><p>Live Site</p></a>
+        {% endif %}
+
     </div>
 </div>
 {% endblock %}
