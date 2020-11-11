@@ -28,6 +28,7 @@ urlpatterns = [
     path('projects/calculator', mysite_views.calculator, name='calculator'),
     path('projects/dog_adoption', mysite_views.dog_adoption, name='dog_adoption'),
     path('projects/the_squarrre', mysite_views.the_squarrre, name='the_squarrre'),
+    path('projects/form_validation', mysite_views.form_validation, name='form_validation'),
 
 ]
 

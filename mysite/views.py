@@ -28,3 +28,6 @@ def dog_adoption(request):
 
 def the_squarrre(request):
     return render(request, 'mysite/projects/the_squarrre.html')
+
+def form_validation(request):
+    return render(request, 'mysite/projects/form_validation.html')
