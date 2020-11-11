@@ -3,16 +3,18 @@
 <h1>Projects built with {{technology}}</h1>
 <div class="row">
 {% for project in projects %}
-    <div class="col-md-4">
-        <div class="card mb-2">
+<div class="col-md-4">
+    <div class="card mb-2">
+        <div class="card-body">
+            <h5 class="card-title">{{project.title}}</h5>
+            <hr>
             <img class="card-img-top" src="{{project.image}}" alt="">
-            <div class="card-body">
-                <h5 class="card-title">{{project.title}}</h5>
-                <p class="card-text">{{project.description}}</p>
-                <a href="{% url 'project_detail' project_pk=project.pk %}" class="btn btn-primary">See More</a>
-            </div>
+            <hr>
+            <p class="card-text">{{project.description}}</p>
+            <a href="{% url 'project_detail' project_pk=project.pk %}" class="btn btn-primary">Read More</a>
         </div>
     </div>
+</div>
 {% endfor %}
 
 </div>
