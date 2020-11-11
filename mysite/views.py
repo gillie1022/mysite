@@ -8,7 +8,7 @@ def resumé(request):
     return render(request, 'mysite/resumé.html')
 
 def list_projects(request):
-    projects = Project.objects.all()
+    projects = Project.objects.all().order_by('title')
     return render(request, 'mysite/list_projects.html', {'projects': projects})
 
 def project_detail(request, project_pk):
